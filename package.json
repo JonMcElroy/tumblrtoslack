@@ -1,0 +1,29 @@
+{
+  "name": "tumblrtoslack",
+  "version": "1.0.0",
+  "description": "Slackbot notifies a channel of new tumblr posts",
+  "main": ".src/index.js",
+  "dependencies": {
+    "tumblr.js" :  "^1.0.0",
+    "slack"     :  "^7.7.0",
+    "express"   :  "^4.13.3",
+    "cron"      :  "^1.0.5"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/amateurs.git"
+  },
+  "keywords": [
+    "tumblr",
+    "slack"
+  ],
+  "author": "jon mcelroy",
+  "license": "MIT"
+}
