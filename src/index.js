@@ -21,6 +21,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/tumblrtoslack', (req, res) => {
 	worker.fetchPosts(5, lastTimestamp, updateTimer);
+	res.send('Success');
 })
 
 app.listen(app.get('port'), function() {

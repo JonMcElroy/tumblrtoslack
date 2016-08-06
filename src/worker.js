@@ -26,7 +26,6 @@ const preparePosts = (data, timestamp, callback) => {
 		}
 
 		dt = timestamp - data.posts[i].timestamp;
-		console.log("POST " + dt + " < " + data.posts[i].summary) // TODO: REMOVE
 		if (dt < 0)
 		{
 			postToSlack(data.posts[i].summary || "No Summary", data.posts[i].short_url);
